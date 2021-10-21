@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Back Office</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>CARGA DE PRODUCTOS</h1>
+
+      <nav>
+        <a href="./index.html">Inicio</a>
+        <a href="./backOffice.html">Carga de productos</a>
+        <a href="./categoria.html">Listado de productos</a>
+        <a href="./Carrito.html">Carrito</a>
+      </nav>
+    </header>
+
+    <main>
+      <form action="" method="">
+        <label for="">Elija nombre de la prenda</label>
+        <select name="nombre" id="nombre">
+          <option value="adidas">Adidas</option>
+          <option value="nike">Nike</option>
+          <option value="puma">Puma</option>
+          <option value="kappa">Kappa</option>
+          <option value="topper">Topper</option>
+          <option value="rebook">Rebook</option>
+        </select> <br>
+
+        <label for="">Elija categoría</label>
+        <select name="categoria" id="categoria">
+          <option value="remera">Remera</option>
+          <option value="pantalon">Pantalón</option>
+          <option value="buzo">Buzo</option>
+          <option value="medias">Medias</option>
+          <option value="Accesorios">Accesorios</option>
+        </select> <br>
+
+        <label for="">Elija género de la prenda</label>
+        <select name="genero" id="genero">
+          <option value="mujer">Mujer</option>
+          <option value="hombre">Hombre</option>
+          <option value="unisex">Unisex</option>
+        </select> <br>
+
+        <label for="precio">Precio</label>
+        <input type="text" id="precio" /><br />
+
+        <label for="stock">Stock</label>
+        <input type="text" id="stock" /><br />
+      </form>
+
+      <button onclick="cargar()">CARGAR</button>
+      <button onclick="location.href = location.href">SIGUIENTE</button>
+      <button onclick="limpiar()">BORRAR LISTA</button>
+    </main>
+
+    <script src="./backOficce.js"></script>
+  </body>
+</html>
